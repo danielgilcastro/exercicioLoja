@@ -1,12 +1,18 @@
-
-
-
 <div class="vitrine-container">
 
 
+    @for ( elemento of produtosService.produtos; track elemento) {
+
     <div class="card">
-        <p>aqui vai entrar o conteudo</p>
+        <h5>{{elemento.nome}}</h5>
+        <img src="{{elemento.srcImg}}" alt="novaImage" height="200px" width="200px">
+        <p>{{elemento.preco}}</p>
     </div>
+
+
+    }
+
+
 
 
 

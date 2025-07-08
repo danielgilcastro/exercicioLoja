@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProdutosService } from '../../services/produtos.service';
 
 @Component({
   selector: 'app-vitrine',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './vitrine.component.css'
 })
 export class VitrineComponent {
+
+  constructor(public produtosService:ProdutosService){}
+
+
+  
 
 }
