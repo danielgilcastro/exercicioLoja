@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { VitrineComponent } from './components/vitrine/vitrine.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { produtoGuardGuard } from './guards/produto-guard.guard';
 
 
 export const routes: Routes = [
@@ -12,7 +13,8 @@ export const routes: Routes = [
     },
     {
         path: 'produtos',
-        component: ProdutosComponent
+        component: ProdutosComponent,
+        canActivate:[produtoGuardGuard]
     },
     {
         path: 'contato',
