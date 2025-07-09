@@ -1,1 +1,42 @@
-<p>produtos works!</p>
+<div class="produtos-container">
+  <div class="header">
+    <h2>Produto em Destaque</h2>
+    <div class="header-line"></div>
+  </div>
+
+  <div class="product-card">
+    <div class="product-image">
+      <img [src]="produtosService.produtoSendoVisto.srcImg" [alt]="produtosService.produtoSendoVisto.nome">
+      <div class="image-overlay">
+        <div class="overlay-content">
+          <i class="icon-zoom">🔍</i>
+        </div>
+      </div>
+    </div>
+    
+    <div class="product-info">
+      <h3 class="product-name">{{ produtosService.produtoSendoVisto.nome }}</h3>
+      <div class="product-price">
+        <span class="price-label">Preço:</span>
+        <span class="price-value">R$ {{ produtosService.produtoSendoVisto.preco }}</span>
+      </div>
+      
+      <div class="product-details">
+        <div class="detail-item">
+          <span class="detail-label">Descrição:</span>
+          <span class="detail-value">{{ produtosService.produtoSendoVisto.descricao || 'Produto de alta qualidade' }}</span>
+        </div>
+        
+        <div class="detail-item">
+          <span class="detail-label">Categoria:</span>
+          <span class="detail-value category-badge">{{ produtosService.produtoSendoVisto.categoria || 'Geral' }}</span>
+        </div>
+      </div>
+      
+      <div class="product-actions">
+        <button class="btn btn-primary">Comprar Agora</button>
+        <button class="btn btn-secondary">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,7 +9,7 @@ export class ProdutosService {
 
   minhavariavel = 'dentro de service';
 
-  produtoSendoVisto = {}
+  produtoSendoVisto:any = {}
 
 
   produtos = [ 
