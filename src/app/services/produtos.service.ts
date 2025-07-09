@@ -9,6 +9,8 @@ export class ProdutosService {
 
   minhavariavel = 'dentro de service';
 
+  produtoSendoVisto = {}
+
 
   produtos = [ 
     { id: 1, nome: 'Produto 1', preco: 100 , srcImg:"./img/img1.jpg"},
