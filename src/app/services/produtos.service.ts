@@ -20,7 +20,7 @@ export class ProdutosService {
     { id: 7, nome: 'Produto 7', preco: 700 , srcImg:"./img/img7.jpg"},
     { id: 8, nome: 'Produto 8', preco: 800 , srcImg:"./img/img8.jpg"},
     { id: 9, nome: 'Produto 9', preco: 900 , srcImg:"./img/img9.jpg"},
-    { id: 10, nome: 'Produto 10', preco: 1000 , srcImg:""},
+    { id: 10, nome: 'Produto 10', preco: 1000 , srcImg:"./img/img10.jpg"},
    ]
 
 
