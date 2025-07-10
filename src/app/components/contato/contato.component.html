@@ -1,1 +1,39 @@
-<p>contato works!</p>
+<form [formGroup]="meuFormulario">
+
+    <label for="nome">Nome:</label>
+    <input type="text" formControlName="nome">
+
+    <label for="email">Email:</label>
+    <input type="text" formControlName="email">
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea formControlName="mensagem"></textarea>
+
+    @if(!meuFormulario.valid){
+    <p>Por favor, preencha todos os campos corretamente.</p>
+    }
+
+    <button type="button" (click)="enviar()">Enviar</button>
+
+</form>
+
+
+
+<form [formGroup]="meuFormulario2">
+
+    <label for="nome">Nome:</label>
+    <input type="text" formControlName="nome">
+
+    <label for="email">Email:</label>
+    <input type="text" formControlName="email">
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea formControlName="mensagem"></textarea>
+
+    @if(!meuFormulario.valid){
+    <p>Por favor, preencha todos os campos corretamente.</p>
+    }
+
+    <button type="button" (click)="enviar()">Enviar</button>
+
+</form>
